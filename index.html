@@ -1,10 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Моя страница.</title>
-</head>
-<body>
-    <H1>Контент страница.</H1>
-</body>
-</html>
+<script>
+
+	var A = -30;
+	var B = -7;
+	var C = 10;
+	var Max = 0;
+
+	alert(A);
+	alert(B); //Не помню, как вывести три числа сразу без создания массива?!
+	alert(C);
+
+	if (A >= B) {
+		Max = A;
+		if (C >= A){
+			Max = C;
+		}
+	} else Max = B;	
+
+	if (C >= Max){
+		Max = C;
+	} 	
+
+	alert(Max);
+
+</script>
