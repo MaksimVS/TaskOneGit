@@ -5,17 +5,28 @@
   <meta charset="UTF-8">
   <title>Document</title>
   <script>
-    var n = +prompt("Введите N ");// Считать число и положить в переменную N
-
-    // тут писать код
+    
+    function main() {
+    var factorial, calk, N;
+    
+    N = Number(window.prompt('Введите значение N'));
+    calk = 1;
+    while (N > 0) {
+        calk = calk * N;
+        N = N - 1;
+    }
+    factorial = calk;
+    window.alert(factorial);    // тут писать код
 
     document.write("Произведение чисел от 1 до " + N + "равно "); // Вывести на экран текст
-    //alert(decision); // Вывести на экран значение переменной decision (решение)
+    //alert(factorial); // Вывести на экран значение переменной factorial (решение)
+    }
+
   </script>
 </head>
 
 <body>
-  <p style="color: blue;">Каеф!</p>
+  <p style="color: orange;">Задача решена!</p>
 
 </body>
 
