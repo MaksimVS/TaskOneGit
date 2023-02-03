@@ -6,21 +6,18 @@
   <title>Document</title>
   <script>
     
-    function main() {
-    var factorial, calk, N;
+    var factorial, calk, n;
     
-    N = Number(window.prompt('Введите значение N'));
+    window.alert("Введите значение n");
+    n = Number(window.prompt('Enter a value for n'));
     calk = 1;
-    while (N > 0) {
-        calk = calk * N;
-        N = N - 1;
+    while (n > 0) {
+        calk = calk * n;
+        n = n - 1;
     }
-    factorial = calk;
-    window.alert(factorial);    // тут писать код
 
-    document.write("Произведение чисел от 1 до " + N + "равно "); // Вывести на экран текст
-    //alert(factorial); // Вывести на экран значение переменной factorial (решение)
-    }
+    factorial = calk;
+    window.alert("Произведение чисел от 1 до n (факториал n) равно " + factorial);
 
   </script>
 </head>
